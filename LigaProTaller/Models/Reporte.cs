@@ -17,4 +17,5 @@ namespace LigaProTaller.Models
         public List<Equipo> EquiposConMayorPresupuesto { get; set; }
     }
 
+
 }

@@ -18,7 +18,7 @@ namespace LigaProTaller.Models
         public string Logo { get; set; }
 
         [Range(0, double.MaxValue, ErrorMessage = "El presupuesto debe ser un valor positivo.")]
-        public decimal Presupuesto { get; set; }
+        public double Presupuesto { get; set; }
 
         [Range(0, int.MaxValue, ErrorMessage = "El número de partidos jugados debe ser un valor positivo.")]
         public int PartidosJugados { get; set; }
@@ -32,7 +32,7 @@ namespace LigaProTaller.Models
         [Range(0, int.MaxValue, ErrorMessage = "El número de partidos perdidos debe ser un valor positivo.")]
         public int PartidosPerdidos { get; set; }
 
-        // Cálculo de puntos (3 puntos por victoria, 1 por empate)
+        // Calculo de puntos (3 puntos por victoria, 1 por empate)
         public int Puntos
         {
             get
